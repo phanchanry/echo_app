@@ -1,0 +1,316 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  #sidebar {
+    width: 100%;
+    position: relative;
+  }
+}
+/* BEGIN FLIP SCROLL RESPONSIVE TABLE */
+@media only screen and (max-width: 800px) {
+  /* Flip Scroll */
+  #flip-scroll .cf:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  #flip-scroll * html .cf {
+    zoom: 1;
+  }
+  #flip-scroll *:first-child + html .cf {
+    zoom: 1;
+  }
+  #flip-scroll table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  #flip-scroll th,
+  #flip-scroll td {
+    margin: 0;
+    vertical-align: top;
+  }
+  #flip-scroll th {
+    text-align: left;
+  }
+  #flip-scroll table {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  #flip-scroll thead {
+    display: block;
+    float: left;
+  }
+  #flip-scroll tbody {
+    display: block;
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  #flip-scroll thead tr {
+    display: block;
+  }
+  #flip-scroll th {
+    display: block;
+    text-align: right;
+  }
+  #flip-scroll tbody tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+  #flip-scroll td {
+    display: block;
+    min-height: 1.25em;
+    text-align: left;
+  }
+  #flip-scroll th {
+    border-bottom: 0;
+    border-left: 0;
+  }
+  #flip-scroll td {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
+  #flip-scroll tbody tr {
+    border-left: 1px solid #babcbf;
+  }
+  #flip-scroll th:last-child,
+  #flip-scroll td:last-child {
+    border-bottom: 1px solid #babcbf;
+  }
+  /* Flip Scroll */
+  /* No More Table */
+  #no-more-tables table,
+  #no-more-tables thead,
+  #no-more-tables tbody,
+  #no-more-tables th,
+  #no-more-tables td,
+  #no-more-tables tr {
+    display: block;
+  }
+  #no-more-tables thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  #no-more-tables tr {
+    border: 1px solid #ccc;
+  }
+  #no-more-tables td {
+    /* Behave  like a "row" */
+  
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    white-space: normal;
+    text-align: left;
+  }
+  #no-more-tables td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+  }
+  #no-more-tables td:before {
+    content: attr(data-title);
+  }
+  /* No More Table */
+}
+/* END FLIP SCROLL RESPONSIVE TABLE */
+@media (max-width: 768px) {
+  #topbar .navbar-header {
+    display: inline-block !important;
+  }
+  #topbar .navbar-inverse .navbar-toggle {
+    border: 0;
+    display: inline-block;
+  }
+  #topbar .navbar-inverse .navbar-toggle:hover,
+  #topbar .navbar-inverse .navbar-toggle:focus {
+    background: transparent;
+  }
+  #topbar ul#quick-menu {
+    display: inline-block;
+    padding: 9px 0;
+    margin: 0 !important;
+  }
+  #topbar ul#quick-menu li {
+    display: inline-block;
+  }
+  #topbar ul#quick-menu li#topbar-fullscreen,
+  #topbar ul#quick-menu li#topbar-chat,
+  #topbar ul#quick-menu li#topbar-list-app {
+    display: inline-block;
+  }
+  #topbar ul#quick-menu li#topbar-inbox ul.dropdown-menu {
+    left: -40px;
+  }
+  #topbar ul#quick-menu li#topbar-task ul.dropdown-menu {
+    left: -80px;
+  }
+  #topbar ul#quick-menu li.dropdown a {
+    display: inline-block;
+  }
+  #topbar ul#quick-menu li.dropdown a > span.badge {
+    top: 3px !important;
+  }
+  #topbar ul#quick-menu li.dropdown ul.dropdown-menu {
+    position: absolute;
+    left: 0;
+    background: #ffffff;
+  }
+  #topbar ul#quick-menu li.dropdown ul.dropdown-menu li {
+    display: block;
+  }
+  #topbar ul#quick-menu li.dropdown ul.dropdown-menu li a {
+    position: relative;
+    display: block;
+  }
+  #topbar ul#quick-menu li.dropdown ul.dropdown-menu li a span.badge {
+    top: 15px !important;
+  }
+  #sidebar {
+    width: 100% !important;
+  }
+}
+@media (max-width: 480px) {
+  #main-container {
+    padding-top: 0px !important;
+  }
+  #topbar .navbar-header {
+    display: block !important;
+  }
+  #topbar nav.navbar.navbar-inverse {
+    position: relative;
+    margin-bottom: 0;
+  }
+  #topbar .navbar-inverse .navbar-toggle {
+    border: 0;
+  }
+  #topbar .navbar-inverse .navbar-toggle:hover,
+  #topbar .navbar-inverse .navbar-toggle:focus {
+    background: transparent;
+  }
+  #topbar ul#quick-menu {
+    padding: 0 15px;
+    margin: 0 !important;
+    width: 100%;
+    float: none !important;
+  }
+  #topbar ul#quick-menu li {
+    display: inline-block;
+  }
+  #topbar ul#quick-menu li#topbar-fullscreen,
+  #topbar ul#quick-menu li#topbar-chat,
+  #topbar ul#quick-menu li#topbar-list-app {
+    display: inline-block;
+  }
+  #topbar ul#quick-menu li#topbar-inbox ul.dropdown-menu {
+    left: -40px;
+  }
+  #topbar ul#quick-menu li#topbar-task ul.dropdown-menu {
+    left: -80px;
+  }
+  #topbar ul#quick-menu li.dropdown a {
+    display: inline-block;
+  }
+  #topbar ul#quick-menu li.dropdown a > span.badge {
+    top: 3px !important;
+  }
+  #topbar ul#quick-menu li.dropdown ul.dropdown-menu {
+    position: absolute;
+    left: 0;
+    background: #ffffff;
+  }
+  #topbar ul#quick-menu li.dropdown ul.dropdown-menu li {
+    display: block;
+  }
+  #topbar ul#quick-menu li.dropdown ul.dropdown-menu li a {
+    position: relative;
+    display: block;
+  }
+  #topbar ul#quick-menu li.dropdown ul.dropdown-menu li a span.badge {
+    top: 15px !important;
+  }
+  #sidebar {
+    width: 100% !important;
+  }
+  #list-app-form {
+    display: none !important;
+  }
+}
+@media (max-width: 320px) {
+  #main-container {
+    padding-top: 0px !important;
+  }
+  #topbar .navbar-header {
+    display: block !important;
+  }
+  #topbar nav.navbar.navbar-inverse {
+    position: relative;
+    margin-bottom: 0;
+  }
+  #topbar .navbar-inverse .navbar-toggle {
+    border: 0;
+  }
+  #topbar .navbar-inverse .navbar-toggle:hover,
+  #topbar .navbar-inverse .navbar-toggle:focus {
+    background: transparent;
+  }
+  #topbar ul#quick-menu {
+    padding: 0 15px;
+    margin: 0 !important;
+    width: 100%;
+    float: none !important;
+  }
+  #topbar ul#quick-menu li {
+    display: inline-block;
+  }
+  #topbar ul#quick-menu li#topbar-fullscreen,
+  #topbar ul#quick-menu li#topbar-chat,
+  #topbar ul#quick-menu li#topbar-list-app {
+    display: none;
+  }
+  #topbar ul#quick-menu li#topbar-inbox ul.dropdown-menu {
+    left: -40px;
+  }
+  #topbar ul#quick-menu li#topbar-task ul.dropdown-menu {
+    left: -80px;
+  }
+  #topbar ul#quick-menu li.dropdown a {
+    display: inline-block;
+  }
+  #topbar ul#quick-menu li.dropdown a > span.badge {
+    top: 3px !important;
+  }
+  #topbar ul#quick-menu li.dropdown ul.dropdown-menu {
+    position: absolute;
+    left: 0;
+    background: #ffffff;
+  }
+  #topbar ul#quick-menu li.dropdown ul.dropdown-menu li {
+    display: block;
+  }
+  #topbar ul#quick-menu li.dropdown ul.dropdown-menu li a {
+    position: relative;
+    display: block;
+  }
+  #topbar ul#quick-menu li.dropdown ul.dropdown-menu li a span.badge {
+    top: 15px !important;
+  }
+  #sidebar {
+    width: 100% !important;
+  }
+  #list-app-form {
+    display: none !important;
+  }
+}
